@@ -1,0 +1,30 @@
+{
+    "command": "mdrun -o traj.trr -e ener.edr -s topol.tpr -g mdlog.log -cpo state.cpt -c outgro", 
+    "command_idx": "mdrun -o traj.trr -e ener.edr -s topol.tpr -g mdlog.log -cpo state.cpt -c outgro", 
+    "mode": "emulated", 
+    "profile": {
+        "cmd": "mdrun -o traj.trr -e ener.edr -s topol.tpr -g mdlog.log -cpo state.cpt -c outgro", 
+        "cpu": {
+            "cores_per_socket": 8, 
+            "flops_per_core": 10804000000, 
+            "flops_per_cycle": 4, 
+            "frequency": 2701000000.0, 
+            "load": 0.75, 
+            "num_sockets": 2, 
+            "threads_per_core": 1
+        }, 
+        "sys": {
+            "hostname": "stampede"
+        }, 
+        "time": {
+            "real": 6.054080009460449, 
+            "start": 1432161926.817659
+        }
+    }, 
+    "tags": {
+        "prob": "1", 
+        "rate": "1", 
+        "step": "500000"
+    }, 
+    "type": "synapse_profile"
+}

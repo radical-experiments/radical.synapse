@@ -1,0 +1,102 @@
+{
+    "command": "mdrun -o traj.trr -e ener.edr -s topol.tpr -g mdlog.log -cpo state.cpt -c outgro", 
+    "command_idx": "mdrun -o traj.trr -e ener.edr -s topol.tpr -g mdlog.log -cpo state.cpt -c outgro", 
+    "mode": "profiled", 
+    "profile": {
+        "cmd": "mdrun -o traj.trr -e ener.edr -s topol.tpr -g mdlog.log -cpo state.cpt -c outgro", 
+        "cpu": {
+            "branch_misses": 2424472.0, 
+            "branch_misses_perc": -1.0, 
+            "branches": 259973602.0, 
+            "branches_perc": -1.0, 
+            "cores_per_socket": 2, 
+            "cycles": 3104888186.0, 
+            "cycles_idle_back": 29.57, 
+            "cycles_idle_back_perc": 33.86, 
+            "cycles_idle_front": 56.17, 
+            "cycles_idle_front_perc": 42.4, 
+            "cycles_perc": -1.0, 
+            "cycles_stalled_back": 918046339.0, 
+            "cycles_stalled_back_perc": -1.0, 
+            "cycles_stalled_front": 1744057742.0, 
+            "cycles_stalled_front_perc": -1.0, 
+            "efficiency": 0.2621449239064151, 
+            "flops": 3912134013.5897956, 
+            "flops_per_core": 10680000000, 
+            "flops_per_cycle": 4, 
+            "frequency": 2670000000.0, 
+            "load": 0.0, 
+            "num_sockets": 1, 
+            "ops": 3783166068.0, 
+            "ops_per_cycle": 1.22, 
+            "ops_per_cycle_perc": -1.0, 
+            "ops_perc": -1.0, 
+            "real": 0.967033863067627, 
+            "sequence": [
+                [
+                    5.000227361, 
+                    {
+                        "branch_misses": 2366145.0, 
+                        "branch_misses_perc": 42.73, 
+                        "branches": 257321353.0, 
+                        "branches_perc": 42.92, 
+                        "cycles": 3115417039.0, 
+                        "cycles_perc": 41.01, 
+                        "cycles_stalled_back": 900465428.0, 
+                        "cycles_stalled_back_perc": 34.19, 
+                        "cycles_stalled_front": 1749637914.0, 
+                        "cycles_stalled_front_perc": 41.03, 
+                        "efficiency": 0.2593512059119405, 
+                        "flops": 742350491.6899717, 
+                        "ops": 3711921240.0, 
+                        "ops_perc": 42.66, 
+                        "real": 5.000227361, 
+                        "utilization": 0.069508473004679
+                    }
+                ]
+            ], 
+            "threads_per_core": 2, 
+            "utilization": 0.3663046829203928
+        }, 
+        "mem": {
+            "peak": 56799232.0, 
+            "rss": 2301952.0, 
+            "sequence": [
+                [
+                    0.1734158992767334, 
+                    {
+                        "rss": 2301952.0, 
+                        "size": 56799232.0
+                    }
+                ]
+            ], 
+            "size": 56799232.0
+        }, 
+        "sto": {
+            "read": 11940.0, 
+            "sequence": [
+                [
+                    0.17145299911499023, 
+                    {
+                        "read": 11940.0, 
+                        "write": 0.0
+                    }
+                ]
+            ], 
+            "write": 0
+        }, 
+        "sys": {
+            "hostname": "thinkie"
+        }, 
+        "time": {
+            "real": 0.967033863067627, 
+            "start": 1431739069.964199
+        }
+    }, 
+    "tags": {
+        "prob": "1", 
+        "rate": "0.2", 
+        "step": "50000"
+    }, 
+    "type": "synapse_profile"
+}
