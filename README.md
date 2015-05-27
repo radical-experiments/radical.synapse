@@ -1,8 +1,6 @@
 
 ## radical.synapse Experiments for the WRAP'2015 workshop
 
-# Synapse Experiments (data and scripts)
-
 run experiments:
 ----------------
 
