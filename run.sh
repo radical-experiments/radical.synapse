@@ -4,7 +4,7 @@ ARG=$1
 
 if test -z "$ARG"
 then
-    echo "need mode arg (run | emu | plot)"
+    echo "need mode arg (exe | pro | emu | plot)"
     exit
 fi
 MODE="$ARG"
@@ -13,7 +13,14 @@ MODE="$ARG"
 ITERS="10"
 STEPS="10000 50000 100000 500000 1000000 5000000 10000000" 
 PROBS="1"
-SAMPLES="0.1 0.2 0.5 1 2 5 10"
+SAMPLES="0.1 0.2 0.5 1 2 10"
+
+if test "$MODE" = "emu" -o \
+        "$MODE" = "exe"
+then
+    SAMPLES="1"
+    export RADICAL_SYNAPSE_WATCHMODE="basic"
+fi
 
 if ! test -f /tmp/synapse_storage.in
 then
