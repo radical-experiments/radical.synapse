@@ -18,7 +18,6 @@ export EXPERIMENT=synapse_s${STEP}_p${PROB}_r${RATE}
 export RADICAL_SYNAPSE_TAGS="prob:$PROB,step:$STEP,rate:$RATE"
 export RADICAL_SYNAPSE_DBURL=mongodb://54.221.194.147:24242/$EXPERIMENT
 export RADICAL_SYNAPSE_DBURL=mongodb://localhost/$EXPERIMENT
-
 export RADICAL_SYNAPSE_DBURL=file://localhost/$ORIG/data/$EXPERIMENT
 
 export RADICAL_SYNAPSE_DBURL="`echo $RADICAL_SYNAPSE_DBURL | tr '.' '_'`"
@@ -141,7 +140,7 @@ then
                -cpo state.cpt \
                -c outgro >> log 2>&1
 
-        echo "        $i ($ITER) - `date`"
+        echo "          $i ($ITER) - `date`"
 
     done
 
