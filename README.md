@@ -1,5 +1,5 @@
 
-## radical.synapse Experiments for the WRAP'2015 workshop
+## radical.synapse Experiments
 
 run experiments:
 ----------------
